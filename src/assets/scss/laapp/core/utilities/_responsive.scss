@@ -1,0 +1,35 @@
+/* 2.8 Responsive ======================================================= */
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    &.gap-y {
+        margin-top: calc($grid-gutter-width / -2);
+        margin-bottom: calc($grid-gutter-width / -2);
+
+         > .col,
+         > [class*="col-"] {
+             padding-top: calc($grid-gutter-width / 2);
+             padding-bottom: calc($grid-gutter-width / 2);
+         }
+    }
+
+    &.gap-2x {
+        margin:calc($grid-gutter-width / -2) * 2;
+        margin: calc($grid-gutter-width / -2) * 2;
+
+        > .col,
+        > [class*="col-"] {
+            padding: calc($grid-gutter-width / 2) * 2;
+            padding: calc($grid-gutter-width / 2) * 2;
+        }
+    }
+}
+
+.hide-mobile-overflow {
+    @include section-overflow();
+}
