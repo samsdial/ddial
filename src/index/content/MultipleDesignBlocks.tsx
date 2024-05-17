@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import Tilt from "react-tilt";
 import { Col, Container, Row } from "reactstrap";
 import MoreInfoButton from "../../components/MoreInfoButton";
@@ -36,14 +36,10 @@ const MultipleDesignBlocks = () => {
     <section className="section powered-design">
       <div className="shapes-container">
         <div className="shape shape-circle shape-circle-1">
-          <Fade bottom right duration={1500}>
             <div />
-          </Fade>
         </div>
         <div className="shape shape-circle shape-circle-2">
-          <Fade bottom right duration={1200} delay={500}>
             <div />
-          </Fade>
         </div>
         <div className="shape shape-ring animation--rotating-diagonal">
           <div />

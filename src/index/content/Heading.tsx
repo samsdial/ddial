@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import { Col, Container, Row } from "reactstrap";
 
 const shapes = [
@@ -23,13 +23,11 @@ const Heading = () => {
       <div className="shapes-container">
         {/* diagonal shapes */}
         {shapes.map((shape) => (
-          <Fade bottom>
             <div
               className="shape shape-animated shape-diagonal"
               duration={shape.duration}
               delay={shape.delay}
             />
-          </Fade>
         ))}
 
         {/* animated shapes */}
@@ -52,15 +50,15 @@ const Heading = () => {
         <div className="static-shape shape-ring-2" />
 
         <div className="static-shape shape-circle shape-circle-1">
-          <Fade top right>
+          
             <div />
-          </Fade>
+          
         </div>
 
         <div className="static-shape shape-circle shape-circle-2">
-          <Fade top right delay={500}>
+          
             <div />
-          </Fade>
+          
         </div>
 
         <div className="static-shape pattern-dots-1" />
