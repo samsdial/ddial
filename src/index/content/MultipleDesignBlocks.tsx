@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 // import Fade from "react-reveal/Fade";
-import Tilt from "react-tilt";
+// import Tilt from "react-tilt";
 import { Col, Container, Row } from "reactstrap";
 import MoreInfoButton from "../../components/MoreInfoButton";
 
@@ -9,8 +9,9 @@ const renderItems = () => {
 
   for (let i = 1; i < 4; i++) {
     items.push(
-      <Tilt options={{ max: 20, glare: true, maxGlare: 0.4 }} key={i}>
+      
         <div
+          key={i}
           className={classNames(
             "rounded tilt overflow-hidden shadow-box shadow-hover bg-contrast",
             { "mt-5": i > 1 }
@@ -24,7 +25,6 @@ const renderItems = () => {
             />
           </figure>
         </div>
-      </Tilt>
     );
   }
 
