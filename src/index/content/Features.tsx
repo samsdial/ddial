@@ -26,7 +26,7 @@ const renderFeatures = () => {
 
   elements.forEach((element, i) => {
     features.push(
-      <Col md="4" className="py-4 rounded shadow-hover">
+      <Col md="4" className="py-4 rounded shadow-hover" key={i}>
         <i className={`pe ${element.icon} pe-3x mb-3 text-primary`} />
         <h5 className="bold">{element.title}</h5>
         <p>{element.description}</p>
