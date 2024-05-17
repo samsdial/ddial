@@ -2,20 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import Fade from "react-reveal/Fade";
 import { Col, Container, Row } from "reactstrap";
 
-const shapes = [
-  { duration: 1500, delay: 100 },
-  { duration: 1000, delay: 100 },
-
-  { duration: 500, delay: 200 },
-  { duration: 500, delay: 200 },
-
-  { duration: 1000, delay: 200 },
-  { duration: 1000, delay: 200 },
-  { duration: 1000, delay: 100 },
-
-  { duration: 1000, delay: 100 },
-  { duration: 1000, delay: 300 }
-];
 
 const Heading = () => {
   return (
