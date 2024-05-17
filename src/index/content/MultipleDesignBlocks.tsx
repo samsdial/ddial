@@ -9,7 +9,6 @@ const renderItems = () => {
 
   for (let i = 1; i < 4; i++) {
     items.push(
-      
         <div
           key={i}
           className={classNames(
