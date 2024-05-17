@@ -11,7 +11,7 @@ interface DefaultNavbarProps {
 const DefaultNavbar = ({ useOnlyDarkLogo } : DefaultNavbarProps) => {
   const [navbarExpanded, setNavbarExpanded] = useState(false);
   console.log("🚀 ~ DefaultNavbar ~ navbarExpanded:", navbarExpanded);
-  const navbarRef = useRef(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   const toggleNavbar = () => {
     setNavbarExpanded((prevExpanded) => !prevExpanded);
@@ -20,12 +20,14 @@ const DefaultNavbar = ({ useOnlyDarkLogo } : DefaultNavbarProps) => {
   useEffect(() => {
     const handleScroll = () => {
       const navigation = navbarRef.current;
-      const navTop = navigation.offsetTop + navigation.offsetHeight;
-
-      if (window.scrollY >= navTop) {
-        navigation.classList.add("navbar-sticky");
-      } else {
-        navigation.classList.remove("navbar-sticky");
+      if(navigation){
+        const navTop = navigation.offsetTop + navigation.offsetHeight;
+  
+        if (window.scrollY >= navTop) {
+          navigation.classList.add("navbar-sticky");
+        } else {
+          navigation.classList.remove("navbar-sticky");
+        }
       }
     };
 
