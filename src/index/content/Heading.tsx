@@ -21,14 +21,7 @@ const Heading = () => {
   return (
     <header className="header alter2-header section">
       <div className="shapes-container">
-        {/* diagonal shapes */}
-        {shapes.map((shape) => (
-            <div
-              className="shape shape-animated shape-diagonal"
-              duration={shape.duration}
-              delay={shape.delay}
-            />
-        ))}
+        
 
         {/* animated shapes */}
         <div className="animation-shape shape-ring animation--clockwise" />
