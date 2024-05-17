@@ -1,7 +1,8 @@
+import { JSX } from "react/jsx-runtime";
 import { Col, Container, Row } from "reactstrap";
 
 const renderFeatures = () => {
-  const features = [];
+  const features: JSX.Element[] = [];
   const elements = [
     {
       icon: "pe-7s-diamond",
