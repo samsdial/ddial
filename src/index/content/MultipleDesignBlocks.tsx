@@ -1,4 +1,5 @@
-import classNames from "classnames/bind";
+import classNames from "classnames";
+import React from "react";
 // import Fade from "react-reveal/Fade";
 // import Tilt from "react-tilt";
 import { Col, Container, Row } from "reactstrap";
@@ -30,7 +31,7 @@ const renderItems = () => {
   return items;
 };
 
-const MultipleDesignBlocks = () => {
+const MultipleDesignBlocks: React.FC = () => {
   return (
     <section className="section powered-design">
       <div className="shapes-container">
