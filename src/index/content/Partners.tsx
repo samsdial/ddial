@@ -32,11 +32,10 @@ const params = {
           onSwiper={(swiper) => console.log(swiper)}
           {...params}
         >
-          {[1, 2, 3, 4, 5, 6].map((i, index) => (
+          {[1, 2, 3, 4, 5, 6].map((img, index) => (
             <div className="swiper-slide" key={index}>
               <img
-                // src={`assets/img/logos/${i}.png`}
-                src="https://picsum.photos/20/20"
+                src={`assets/img/logos/${img}.png`}
                 className="img-responsive"
                 alt=""
                 style={{ maxHeight: "60px" }}
