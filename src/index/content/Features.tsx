@@ -6,21 +6,21 @@ const renderFeatures = () => {
   const elements = [
     {
       icon: "pe-7s-diamond",
-      title: "Powerful Design",
+      title: "Entrega Rápida",
       description:
-        "Ab ad aliquam assumenda beatae commodi distinctio dolore dolorum earum error et, exercitationem"
+        "Reciba su desarrollo en un plazo medio de cinco días laborables."
     },
     {
       icon: "pe-7s-tools",
-      title: "Professional Tools",
+      title: "Revisiones Ilimitadas",
       description:
-        "Blanditiis cumque, eius error est et exercitationem, explicabo hic natus nobis odit porro quia"
+        "Revisaremos los desarrollos hasta que esté 100% satisfecho."
     },
     {
       icon: "pe-7s-light",
-      title: "Creative Content",
+      title: "Soporte Continuo",
       description:
-        "A animi aperiam cupiditate eum incidunt, magni mollitia nam nemo non officia omnis, quasi quisquam"
+        "Acceso a soporte técnico dedicado para cualquier consulta o problema."
     }
   ];
 
@@ -42,12 +42,9 @@ const Features = () => {
     <section id="features" className="section features">
       <Container>
         <div className="section-heading text-center">
-          <h2 className="heading-line">Premium features</h2>
+          <h2 className="heading-line">Planes flexibles y completos</h2>
           <p className="lead text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nulla,
-            voluptates. Architecto eum minima necessitatibus quo reiciendis!
-            Aliquam culpa doloremque eaque esse illo, nemo nesciunt nobis quia
-            sapiente tenetur veniam.
+          Suscríbase a un plan y solicite tantos desarrollos como desee.
           </p>
         </div>
 

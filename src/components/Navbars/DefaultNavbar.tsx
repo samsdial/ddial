@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import LogoLight from "../../assets/img/logo-light.png";
+import Logo from "../../assets/img/logo.png";
 
 // reactstrap components
 import { Container, Nav, NavItem, NavLink, NavbarBrand } from "reactstrap";
@@ -56,18 +58,18 @@ const DefaultNavbar = ({ useOnlyDarkLogo } : DefaultNavbarProps) => {
           {useOnlyDarkLogo ? (
             <img
               alt="..."
-              src="assets/img/logo.png"
+              src={Logo}
               className="logo logo-sticky"
             />
           ) : (
             <>
               <img
-                src="assets/img/logo.png"
+                src={Logo}
                 alt="Laapp"
                 className="logo logo-sticky d-block d-md-none"
               />
               <img
-                src="assets/img/logo-light.png"
+                src={LogoLight}
                 alt="Laapp"
                 className="logo d-none d-md-block"
               />
@@ -79,7 +81,7 @@ const DefaultNavbar = ({ useOnlyDarkLogo } : DefaultNavbarProps) => {
           <div className="sidebar-brand">
             <Link to="/">
               <img
-                src="assets/img/logo.png"
+                src={Logo}
                 alt="Laapp Template"
                 className="logo"
               />
@@ -88,20 +90,20 @@ const DefaultNavbar = ({ useOnlyDarkLogo } : DefaultNavbarProps) => {
 
           <Nav className="nav navbar-nav ml-auto" navbar>
             <NavItem>
-              <NavLink href="#!">Home</NavLink>
+              <NavLink href="#!">Inicio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#!">About</NavLink>
+              <NavLink href="#!">Planes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#!">Product</NavLink>
+              <NavLink href="#!">Cómo Funciona</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="#!">Pricing</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#!">Contact</NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </div>
       </Container>

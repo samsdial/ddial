@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "reactstrap";
+import Img from "../assets/img/logo.png";
 
 const Footer = () => {
   return (
@@ -7,20 +8,18 @@ const Footer = () => {
         <Row className="gap-y text-center text-md-left">
           <Col md="6" lg="4" className="mr-auto">
             {/* <img src={require("assets/img/logo.png")} alt="" className="logo" /> */}
-            <img src="assets/img/logo.png" alt="" className="logo" />
+            <img src={Img} alt="" className="logo" />
 
             <p className="lead">
-              <span className="bold">Laapp</span>, a premium yet ease to
-              customize App Landing Page
+              <span className="bold">Dial Studios</span>, Desarrollo Web y Apps progresivas
             </p>
           </Col>
 
           <Col md="3" lg="4">
-            <h6 className="py-2 bold">Find us</h6>
+            <h6 className="py-2 bold">Contactenos</h6>
 
             <p>
-              We are improving our social presence, please like us or follow us
-              to know all the news about products, releases and services
+            Estamos mejorando nuestra presencia en las redes sociales. Para conocer todas las novedades sobre productos, lanzamientos y servicios
             </p>
             <nav className="nav justify-content-center justify-content-md-start">
               <a
@@ -35,32 +34,32 @@ const Footer = () => {
           </Col>
 
           <Col md="3">
-            <h6 className="py-2 bold">Other Products</h6>
+            <h6 className="py-2 bold">Otros Productos</h6>
 
             <nav className="nav flex-column">
               <a
                 className="nav-item py-2"
-                href="https://themeforest.net/item/dashcore-saas-startup-software-template/22397137"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                DashCore
+                Diseño
               </a>
               <a
                 className="nav-item py-2"
-                href="https://themeforest.net/item/cronos-softwarestartup-html-template/21411634"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Cronos
+                Diseño ux/ui
               </a>
               <a
                 className="nav-item py-2"
-                href="https://themeforest.net/user/5studiosnet/portfolio"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                More ...
+                Marketing digital
               </a>
             </nav>
           </Col>
@@ -71,15 +70,16 @@ const Footer = () => {
         <Row className="small align-items-center">
           <Col md="4">
             <p className="mt-2 mb-md-0 text-muted text-center text-md-left">
-              © 2019
+              © 2024
               <a
-                href="https://5studios.net"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="ml-1 mr-2"
               >
-                5studios
+                Dial Studios
               </a>
-              . All Rights Reserved
+                All Rights Reserved
             </p>
           </Col>
         </Row>

@@ -3,6 +3,7 @@ import React from "react";
 // import Fade from "react-reveal/Fade";
 // import Tilt from "react-tilt";
 import { Col, Container, Row } from "reactstrap";
+import Img from "../../assets/img/screens/app/pieces/2.png";
 import MoreInfoButton from "../../components/MoreInfoButton";
 
 const renderItems = () => {
@@ -19,7 +20,8 @@ const renderItems = () => {
         >
           <figure>
             <img
-              src={`assets/img/screens/app/pieces/${i}.png`}
+              // src={`../../assets/img/screens/app/${i}.png`}
+              src={Img}
               className="img-responsive"
               alt=""
             />
@@ -56,17 +58,16 @@ const MultipleDesignBlocks: React.FC = () => {
           <Col md="6">
             <div className="section-heading">
               <h2 className="heading-line">
-                Powered with multiple design blocks
+                No Reinventamos la Rueda.<br></br> Sólo desarrollamos con pasion.
               </h2>
               <p className="lead text-muted">
-                Unlock the power of Web Design. Laapp comes with multiple
-                reusable code blocks you can use to build awesome web pages.
+                El desarrollo web tal y como lo conoces se ha ido. El desarrollo como usted lo quiere pontenciar y cumplir los objetivos.
               </p>
             </div>
 
             <MoreInfoButton
               className="btn btn-outline-alternate more-link mt-0"
-              text="Now is the time"
+              text="El tiempo es ahora"
               to="#!"
             />
           </Col>
