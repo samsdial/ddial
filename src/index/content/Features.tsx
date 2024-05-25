@@ -44,7 +44,7 @@ const Features = () => {
         <div className="section-heading text-center">
           <h2 className="heading-line">Planes flexibles y completos</h2>
           <p className="lead text-muted">
-          Suscríbase a un plan y solicite tantos desarrollos como desee.
+            Suscríbase a un plan y solicite tantos desarrollos como desee.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoLight from "../../assets/img/logo-light.png";
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/logotipo-dial.png";
 
 // reactstrap components
 import { Container, Nav, NavItem, NavLink, NavbarBrand } from "reactstrap";

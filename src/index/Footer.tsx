@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "reactstrap";
-import Img from "../assets/img/logo.png";
+import Img from "../assets/img/isotipo-dial.png";
 
 const Footer = () => {
   return (
