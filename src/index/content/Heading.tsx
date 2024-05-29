@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import Fade from "react-reveal/Fade";
 import { Col, Container, Row } from "reactstrap";
 import Screen from "../../assets/img/screens/app/3.png";
-
+import IconSvg from "../../components/IconSvg";
 
 
 const Heading = () => {
@@ -38,11 +38,8 @@ const Heading = () => {
         <Row>
           <Col md="6">
             <span className="rounded-pill shadow-box bg-contrast text-dark bold py-2 px-4">
-              <FontAwesomeIcon
-                icon={["far", "lightbulb"]}
-                className="text-primary mr-2"
-              />
-              <span className="text-primary">Impresionando</span> el mundo
+              <IconSvg icon="light" size="20" color="#ff6f61" />
+              <span className="ml-2 text-primary">Impresionando</span> el mundo
             </span>
             <h1 className="display-4 display-md-2 mt-3">
               <span className="bold">WebApps</span>
@@ -53,20 +50,7 @@ const Heading = () => {
             <p className="lead m-0">
               Potencia tu negocio online y nunca la abandones pausa tu suscrición en cualquier momento o llevala a otro nivel.
             </p>
-            <ul>
-              <li>
-                <p>Sitios web</p>
-              </li>
-              <li>
-                <p>Tiendas virtuales</p>
-              </li>
-              <li>
-                <p>Apps a la medida</p>
-              </li>
-              <li>
-                <p>Marketing digital</p>
-              </li>
-            </ul>
+
             <nav className="nav my-5">
               <a
                 href="#!"
@@ -87,7 +71,7 @@ const Heading = () => {
             </nav>
           </Col>
           <Col md="6">
-            <div className="iphone front mx-auto">
+            <div className="ipad front mx-auto">
               <div className="screen shadow-box">
                 <img src={Screen} alt="..." />
               </div>

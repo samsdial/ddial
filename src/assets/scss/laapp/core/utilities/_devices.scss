@@ -39,7 +39,6 @@
 
 .iphone, .ipad {
     background: $iphone-bg-color;
-    max-width: 255px;
     border-radius: 36px;
     padding: 55px 0;
     box-shadow:
@@ -120,8 +119,13 @@
         }
     }
 }
+.iphone {
+    max-width: 255px;
+}
 
 .ipad {
+    max-width: 311px;
+    transform: rotate(5deg);
     &:before {
         content: none;
     }

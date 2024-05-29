@@ -7,6 +7,7 @@ import Features from './index/content/Features';
 import Heading from './index/content/Heading';
 import MultipleDesignBlocks from './index/content/MultipleDesignBlocks';
 import Partners from './index/content/Partners';
+import Pricing from './index/content/Princing';
 //import "./assets/scss/demo.scss";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Heading />
         <Partners />
         <Features />
+        <Pricing />
         <MultipleDesignBlocks />
       </main>
       <Footer />

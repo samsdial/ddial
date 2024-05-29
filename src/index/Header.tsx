@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link as SmoothLink } from "react-scroll";
 import { Col, Container, Row } from "reactstrap";
+import Icons from '../assets/icons.svg';
+import IconSvg from '../components/IconSvg';
 
 const icons = [
   { icon: "apx" },
@@ -42,7 +44,7 @@ const Header = () => {
         <Row>
           <Col lg="6">
             <img
-              src="assets/img//logo-light.png"
+              src="assets/img/logo-light.png"
               className="logo d-block mb-5"
               alt="Laapp"
             />
@@ -51,6 +53,13 @@ const Header = () => {
                 icon={["far", "lightbulb"]}
                 className="text-primary mr-2"
               />
+              <IconSvg icon="light" />
+              <svg viewBox="0 0 28.3 28.3" className="App-icon">
+                <use xlinkHref={`${Icons}#square`} />
+              </svg>
+              <svg viewBox="0 0 28.3 28.3" className="App-icon">
+                <use xlinkHref={`${Icons}#square`} />
+              </svg>
               <span className="text-primary">Awesome</span> Landing Page
             </span>
             <h1 className="text-contrast display-4 display-md-3">
