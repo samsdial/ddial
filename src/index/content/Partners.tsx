@@ -1,48 +1,83 @@
-// Import Swiper React components
-import 'swiper/css';
-import { Swiper } from 'swiper/react';
+
+import { Key } from "react";
+import Slider from "react-slick";
+import LogoOne from "../../assets/img/logos/1.png";
+import LogoTwo from "../../assets/img/logos/2.png";
+
+const Logo: Array = [
+  {
+    src: LogoOne,
+  },
+  {
+    src: LogoTwo,
+  },
+  {
+    src: LogoOne,
+  },
+  {
+    src: LogoTwo,
+  },
+  {
+    src: LogoOne,
+  },
+  {
+    src: LogoTwo,
+  },
+] 
 
 const Partners = () => {
-const params = {
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnIteration: false
-    },
-    slidesPerView: 1,
-    spaceBetween: 30
+  const params = {
+      className: "center",
+      centerPadding: "60px",
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
   return (
     <section className="section">
       <div className="container py-5 border-bottom">
-        {/* <Swiper {...params}>
-          {[1, 2, 3, 4, 5, 6].map(i => (
-            <div className="swiper-slide">
+        <Slider {...params}>
+        {Logo.map((logo: { src: string }, i: Key | null | undefined) => (
+            <div className="swiper-slide" key={i}>
               <img
-                src={`assets/img/logos/${i}.png`}
+                src={logo.src}
                 className="img-responsive"
                 alt=""
                 style={{ maxHeight: "60px" }}
               />
             </div>
           ))}
-        </Swiper> */}
-        <Swiper
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          {...params}
-        >
-          {[1, 2, 3, 4, 5, 6].map((img, index) => (
-            <div className="swiper-slide" key={index}>
-              <img
-                src={`assets/img/logos/${img}.png`}
-                className="img-responsive"
-                alt=""
-                style={{ maxHeight: "60px" }}
-              />
-            </div>
-          ))}
-        </Swiper>
+        </Slider>
       </div>
     </section>
   );

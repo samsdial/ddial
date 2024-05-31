@@ -18,8 +18,8 @@ function App() {
         <Heading />
         <Partners />
         <Features />
-        <Pricing />
         <MultipleDesignBlocks />
+        <Pricing />
       </main>
       <Footer />
     </>
