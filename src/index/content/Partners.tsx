@@ -4,7 +4,11 @@ import Slider from "react-slick";
 import LogoOne from "../../assets/img/logos/1.png";
 import LogoTwo from "../../assets/img/logos/2.png";
 
-const Logo: Array = [
+interface LogoItem {
+  src: string;
+}
+
+const Logo: Array<LogoItem> = [
   {
     src: LogoOne,
   },
